@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GTFS_Project.GUI.Controller">
+   <children>
+      <Pane layoutX="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="910.0" prefWidth="900.0">
+         <children>
+            <MenuBar layoutX="-10.0" layoutY="2.0" prefHeight="25.0" prefWidth="910.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#handleOpenFiles" text="Open Files" />
+                        <MenuItem fx:id="SaveFiles" disable="true" mnemonicParsing="false" onAction="#handleSaveFiles" text="Save Files" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleClose" text="Close" />
+                  </items>
+                </Menu>
+                <Menu fx:id="Search" disable="true" mnemonicParsing="false" text="Search">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#handleSearchRouteID" text="Stops with RouteID" />
+                      <MenuItem mnemonicParsing="false" onAction="#handleSearchStopID" text="Routes with StopID" />
+                  </items>
+                </Menu>
+                  <Menu fx:id="UpdateAtt" disable="true" mnemonicParsing="false" text="Update Attribute">
+                    <items>
+                        <Menu mnemonicParsing="false" text="Routes">
+                           <items>
+                            <MenuItem mnemonicParsing="false" onAction="#handleRouteIDUpdate" text="Route ID" />
+                              <MenuItem mnemonicParsing="false" onAction="#handleRouteColorUpdate" text="Route Color" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Trips">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#handleTripIDUpdate" text="Trip ID" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Stops">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#handleStopIDUpdate" text="Stop ID" />
+                              <MenuItem mnemonicParsing="false" onAction="#handleStopNameUpdate" text="Stop Name" />
+                              <MenuItem mnemonicParsing="false" onAction="#handleStopLat" text="Latitude" />
+                              <MenuItem mnemonicParsing="false" onAction="#handleStopLon" text="Longitude" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="StopTimes">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#handleArrTimeUpdate" text="Arrival Time" />
+                              <MenuItem mnemonicParsing="false" onAction="#handleDepTimeUpdate" text="Departure Time" />
+                              <MenuItem mnemonicParsing="false" onAction="#handleSeqUpdate" text="Stop Sequence" />
+                           </items></Menu>
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+            <TabPane layoutX="-10.0" layoutY="27.0" prefHeight="881.0" prefWidth="910.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                  <Tab text="Map ">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <WebView fx:id="webView" prefHeight="855.0" prefWidth="910.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                <Tab text="Trips">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="TripsView" prefHeight="855.0" prefWidth="910.0">
+                                <columns>
+                                  <TableColumn fx:id="TripsTripID" prefWidth="455.0" resizable="false" style="-fx-alignment: center" text="Trip ID" />
+                                  <TableColumn fx:id="TripsRouteID" prefWidth="455.0" resizable="false" style="-fx-alignment: center" text="Route ID" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Routes">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="RoutesView" prefHeight="881.0" prefWidth="910.0">
+                                <columns>
+                                  <TableColumn fx:id="RoutesRouteID" prefWidth="455.0" resizable="false" style="-fx-alignment: center" text="Route ID" />
+                                  <TableColumn fx:id="RoutesRouteColor" prefWidth="455.0" resizable="false" style="-fx-alignment: center" text="Route Color" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                <Tab text="Stops">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="StopsView" prefHeight="855.0" prefWidth="910.0">
+                                <columns>
+                                  <TableColumn fx:id="StopsStopID" prefWidth="227.5" resizable="false" style="-fx-alignment: center" text="Stop ID" />
+                                  <TableColumn fx:id="StopsStopName" prefWidth="227.5" resizable="false" style="-fx-alignment: center" text="Stop Name" />
+                                    <TableColumn fx:id="StopsLatitude" prefWidth="227.5" resizable="false" style="-fx-alignment: center" text="Latitude" />
+                                    <TableColumn fx:id="StopsLongitude" prefWidth="227.5" resizable="false" style="-fx-alignment: center" text="Longitude" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Stop Times">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="StopTimesView" nodeOrientation="LEFT_TO_RIGHT" prefHeight="855.0" prefWidth="910.0">
+                                <columns>
+                                  <TableColumn fx:id="StopTimesTripID" prefWidth="182.0" resizable="false" style="-fx-alignment: center" text="Trip ID" />
+                                  <TableColumn fx:id="StopTimesArrivalTime" prefWidth="182.0" resizable="false" style="-fx-alignment: center" text="Arrival Time" />
+                                    <TableColumn fx:id="StopTimesDepartureTime" prefWidth="182.0" resizable="false" style="-fx-alignment: center" text="Departure Time" />
+                                    <TableColumn fx:id="StopTimesStopID" prefWidth="182.0" resizable="false" style="-fx-alignment: center" text="Stop ID" />
+                                    <TableColumn fx:id="StopTimesStopSequence" minWidth="2.0" prefWidth="182.0" resizable="false" style="-fx-alignment: center" text="Stop Sequence" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

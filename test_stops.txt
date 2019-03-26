@@ -1,0 +1,24 @@
+stop_id,stop_name,stop_desc,stop_lat,stop_lon
+3F56F87E65,"Transfer Center","",44.810060,-91.497640
+9F0E64DAB2,"Walmart Supercenter","",44.775970,-91.429180
+5A52D3DAB2,"Gateway and S.Hastings Service Rd","Past the entrances to Target",44.780780,-91.434250
+63FEA496C1,"Festival Foods lot N","North parking Lot",44.789320,-91.459730
+7CCA4EE43B,"Vine and Delong Middle School Driveway","Sign is near Driveway",44.819230,-91.535290
+E31390AC08,"Starr and Connell's 2 entrance","by the Airport Terminal",44.862330,-91.482250
+461589DB2C,"Margaret and Main","Sign is Located on Margaret St",44.812270,-91.478650
+AC729B9CEE,"Margaret and Altoona","Even numbered side of street.",44.809160,-91.478650
+FF5192DA85,"Margaret and Highland","Even numbered side of street.",44.807340,-91.478640
+DAE51C9EA6,"Margaret and Fenwick","Even numbered side of street.",44.803720,-91.478630
+908738A94F,"Rudolph and Benton","Sign is between the Church and Benton Street.",44.796760,-91.478560
+0BD3731D52,"Fairfax and Skeels","At the Stop Sign",44.789498,-91.468369
+548ECD3057,"Festival Foods lot S","At the Island even with the Festival Store South entrance.",44.787510,-91.459750
+942DAC8E65,"Mall Dr and E. Hamilton","Eau Claire Auto Group Parking Lot",44.786860,-91.461250
+65A8CA15C1,"E. Hamilton and Family Dollar","Past the Second Family Dollar driveway from HWY 93",44.785550,-91.458170
+A10ECC4BD2,"E. Hamilton and Miller","At the Crosswalk",44.785520,-91.455020
+5D6D58DB42,"Barstow and Eau Claire","Odd side of street",44.812180,-91.500540
+BFD4717811,"Barstow and Galloway","Odd side of street",44.814540,-91.501250
+DC301BC54C,"Galloway and N Dewey","No Bus Sign - Express 10  only  - Odd side of st",44.814740,-91.499300
+C43B92367A,"Putnam and Wisconsin","No Bus Sign - Express 10 route - Odd side of street",44.815760,-91.495290
+F98DB5D7AC,"Madison and Bellevue","No Bus Sign - Exp 10 rte",44.817630,-91.492670
+455590F2B4,"Madison and McDonough","No bus sign - Express 10 route - Odd side of the street",44.817770,-91.489070
+B1DFE3AF9C,"Ball and CDC Parking Lot","Just crosswalk at the curb",44.816000,-91.485850

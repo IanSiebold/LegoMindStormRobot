@@ -1,0 +1,24 @@
+stop_id,stop_name,stop_desc,stop_lat,stop_lon
+3F56F87E65,"Transfer Center",,44.81006,-91.49764
+9F0E64DAB2,"Walmart Supercenter",,44.77597,-91.42918
+5A52D3DAB2,"Gateway and S.Hastings Service Rd",,44.78078,-91.43425
+63FEA496C1,"Festival Foods lot N",,44.78932,-91.45973
+7CCA4EE43B,"Vine and Delong Middle School Driveway",,44.81923,-91.53529
+E31390AC08,"Starr and Connell's 2 entrance",,44.86233,-91.48225
+461589DB2C,"Margaret and Main",,44.81227,-91.47865
+AC729B9CEE,"Margaret and Altoona",,44.80916,-91.47865
+FF5192DA85,"Margaret and Highland",,44.80734,-91.47864
+DAE51C9EA6,"Margaret and Fenwick",,44.80372,-91.47863
+908738A94F,"Rudolph and Benton",,44.79676,-91.47856
+0BD3731D52,"Fairfax and Skeels",,44.789498,-91.468369
+548ECD3057,"Festival Foods lot S",,44.78751,-91.45975
+942DAC8E65,"Mall Dr and E. Hamilton",,44.78686,-91.46125
+65A8CA15C1,"E. Hamilton and Family Dollar",,44.78555,-91.45817
+A10ECC4BD2,"E. Hamilton and Miller",,44.78552,-91.45502
+5D6D58DB42,"Barstow and Eau Claire",,44.81218,-91.50054
+BFD4717811,"Barstow and Galloway",,44.81454,-91.50125
+DC301BC54C,"Galloway and N Dewey",,44.81474,-91.4993
+C43B92367A,"Putnam and Wisconsin",,44.81576,-91.49529
+F98DB5D7AC,"Madison and Bellevue",,44.81763,-91.49267
+455590F2B4,"Madison and McDonough",,44.81777,-91.48907
+B1DFE3AF9C,"Ball and CDC Parking Lot",,44.816,-91.48585

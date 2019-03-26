@@ -1,0 +1,10 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color
+2F52F87E6A,,,,,,,008345,
+D837EE7A8,,,,,,,005BAB,
+A7C1CB80,,,,,,,74392D,
+EC19586170,,,,,,,005BAB,
+C242B87D82,,,,,,,F5821F,
+5E81AD26C8,,,,,,,6D2383,
+619748505B,,,,,,,61BB46,
+1116B94971,,,,,,,000000,
+20A546C35C,,,,,,,00ADEF,
